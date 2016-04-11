@@ -1,0 +1,34 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+	<body ng-app="assign_8">
+		
+
+		<!-- Fixed header at top -->
+			<div class="fixed header">
+				<img src="images/header.png">
+			</div>
+
+			<div class="main" ng-controller="myController">
+				
+
+				<div class="container" ng-repeat=" app in main" ng-show="isVisible">
+				<h1> {{ app.head }}  </h1>
+				<p> {{ app.para }}</p>
+				<button ng-click="starts()"> {{app.submit}} </button>
+				</div>
+
+
+			</div>
+
+		<!-- Fixed footer at bottom -->
+			<div class="footer">
+				<img src="images/footer.png">
+			</div>
+
+	
+		<script src="javascript/angular.js"></script>
+		<script src="javascript/app.js"></script>
+	</body>
+</html>
